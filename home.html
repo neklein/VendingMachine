@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <link href="css/bootstrap.min.css"
+                rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css"
+                rel="stylesheet">
+    </head>
+    <body>
+            <div class="container">
+                <div class="row" id="title" style="text-align: center">
+                    <h1>Vending Machine</h1>
+                    <hr/>                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-9" id="items-to-vend">
+                        <input id="item-id" hidden >
+                    </div>
+                    <div class="col-sm-3" id="buttons-and-messages">
+                        <div class="row">
+                            <div style="text-align: center">
+                                <h4>Total $ In</h4>
+                                <input type="text" id="money-in" style="width: 100px" disabled><br/>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button role="button" 
+                                            type="btn btn-default" 
+                                            style="width: 100px"
+                                            id="addDollar">Add Dollar</button>                                                                 
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button role="button" 
+                                            type="btn btn-default" 
+                                            style="width: 100px"
+                                            id="addQuarter">Add Quarter</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button role="button" 
+                                            type="btn btn-default"
+                                            style="width: 100px" 
+                                            id="addDime">Add Dime</button>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button role="button" 
+                                            type="btn btn-default" 
+                                            style="width: 100px"
+                                            id="addNickel">Add Nickel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="row">
+                            <div style="text-align: center">
+                                <h4>Messages</h4>
+                                <input type="text" id="message-in" disabled><br/>
+                                <div class="row">
+                                    <h4 class="col-sm-4">Item:</h4>
+                                    <input type="text" id="item-in" style="width: 100px" disabled>                                        
+                                </div>
+                                <button role="button" type="btn btn-default" id="purchase-button">Make Purchase</button>                               
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="row" style="text-align: center">
+                            <div class="row">
+                                <h4>Change</h4>
+                                <input type="textarea" id="change-returned" disabled>        
+                            </div>
+                            <br/>
+                            <button role="button" type="btn btn-default" id="change-return">
+                                    Change Return
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <script src="js/jquery-2.2.4.min.js"></script>            
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
